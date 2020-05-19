@@ -4,3 +4,9 @@
 /* @import "vendors/reset.css"; */
 
 @import "vendors/normalize.css";
+
+/* typography */
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
