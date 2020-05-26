@@ -12,25 +12,65 @@
 
 <body>
 
-    <h1>[Your Name Here]'s Jump Site</h1>
-    <h2>ID-280 Interactive Design 1</h2>
+    <header>
 
-    <p>
-        [Insert 3 sentences about this site here]<br>Hey, internet traveller!<br> Thanks for stopping by my jump page!<br> Here's where I keep all my ID-280 Projects and such.<br> Feel free to peruse them and bask in my creative prowess!
-        <img width="300px" src="assets/images/alex-sector-drilling.jpg" alt="my cartoon alter ego from the 80's alex sector.">
-    </p>
+        <h1>[Your Name Here]'s Jump Site</h1>
+        <h2>ID-280 Interactive Design 1</h2>
 
-    <!-- be sure and use Emmet Syntax when possible -->
-    <!-- ul>li*5 -->
+        <!-- use Emmet Syntax to rapidly bust out some HTML -->
+        <!-- nav>ul>li*3>a -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="projects/">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <ul>
-        <li>[Your Name Here]</li>
-        <li>What is your major?</li>
-        <li>From whence do you hail?</li>
-        <li>Fun Fact!</li>
-        <li>What you want to be when you grow up...</li>
-    </ul>
+    </header>
 
+    <main>
+
+        <p>
+            [Insert 3 sentences about this site here]<br>Hey, internet traveller!<br> Thanks for stopping by my jump page!<br> Here's where I keep all my ID-280 Projects and such.<br> Feel free to peruse them and bask in my creative prowess!
+            <img width="300px" src="assets/images/alex-sector-drilling.jpg" alt="my cartoon alter ego from the 80's alex sector.">
+        </p>
+
+        <!-- be sure and use Emmet Syntax when possible -->
+        <!-- ul>li*5 -->
+
+        <ul>
+            <li>[Your Name Here]</li>
+            <li>What is your major?</li>
+            <li>From whence do you hail?</li>
+            <li>Fun Fact!</li>
+            <li>What you want to be when you grow up...</li>
+        </ul>
+
+    </main>
+
+    <footer>
+
+        <!-- a>img -->
+        <a href="http://ritual.com"><img src="assets/images/" alt="add for ritual"></a>
+
+        <a href="http://ritual.com"><img src="assets/images/" alt="add for ritual"></a>
+
+        <br>
+
+        <small>&copy; <time>2020</time></small>
+
+        <br>
+
+        <div id="motd"> </div>
+
+    </footer>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
