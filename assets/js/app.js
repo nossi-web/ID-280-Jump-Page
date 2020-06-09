@@ -15,13 +15,19 @@ let motdArray = [
 // getRandomInt function procured from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 function getRandomInt(max) {
 
+    // Math.floor rounds a floating-point number down to the nearest integer. 
+    // Math.random returns a random floating point number between 0 and 1. 
+    // max here is the max range we want the random integer in. 
     return Math.floor(Math.random() * Math.floor(max));
 }
 
+// the length of the array will be the largest integer we want. 
+// this way the random integer won't be a number index greater than what the array has for elements
 let randomIndex = getRandomInt(motdArray.length);
 
 console.log("randomIndex is " + randomIndex);
 
 // query the document and get an element with an id of 'motd'
 // and assign our character string to it.
+// we'll use the random integer we generated as the array index. 
 document.querySelector("#motd").innerHTML = motdArray[randomIndex];
