@@ -4,11 +4,16 @@
 /* @import "vendors/reset.css"; */
 
 @import "vendors/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* font-family: 'VT323', monospace; */
+
 
 /* typography */
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
 }
 
 
@@ -24,4 +29,13 @@ nav a:visited {
 
 nav a:hover {
     color: #00F;
+}
+
+
+/* Background Image */
+
+body {
+    background: url("../images/graph-paper-body-bg-img.jpg") repeat-y;
+    background-size: cover;
+    padding: 5%;
 }
