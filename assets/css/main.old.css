@@ -46,10 +46,21 @@ footer {
 
 /* Main Navigation */
 
+
+/* removes the padding on the main unordered list in the navigation */
+
+nav>ul {
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
 nav a {
     font-family: 'Novo Mono', monospace;
+    padding: 0.7rem;
     display: block;
-    padding: 0.6rem;
     text-decoration: none;
 }
 
@@ -65,22 +76,10 @@ nav a:hover {
     color: #00BFFF;
 }
 
-nav>ul {
-    padding: 0;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav .sub-nav {
+nav a+.sub-nav {
     height: 0;
     overflow: hidden;
-}
-
-nav a+.sub-nav {
-    height: 150px;
-    transition: height 0.3s;
+    transition: height 0.5s;
 }
 
 
